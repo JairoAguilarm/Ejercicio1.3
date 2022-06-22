@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tarea3.MainPage">
+
+    <StackLayout>
+        
+        <Entry Placeholder="ID" Keyboard="Numeric" x:Name="txtid" Margin="5,0,5,0"  Text="{Binding id} " IsEnabled="False" TextChanged="txtid_TextChanged"/>
+        <Entry Placeholder="Nombre" Keyboard="Text" x:Name="txtnombre" Margin="5,0,5,0"  Text="{Binding nombre}"/>
+        <Entry Placeholder="Apellido" Keyboard="Text" x:Name="txtapellido" Margin="5,0,5,0"  Text="{Binding apellido}"/>
+        <Entry Placeholder="Edad" Keyboard="Numeric" x:Name="txtedad" Margin="5,0,5,0"  Text="{Binding edad}"/>
+        <Entry Placeholder="Correo electronico" Keyboard="Email" x:Name="txtemail" Margin="5,0,5,0"  Text="{Binding correo}"/>
+        <Entry Placeholder="Direccion" Keyboard="Text" x:Name="txtdireccion" Margin="5,0,5,0"  Text="{Binding direccion}"/>
+
+
+        <Button Text="Insertar" x:Name="btnsalvar" Margin="10,0,10,0" Clicked="btnsalvar_Clicked" />
+        <Button Text="Eliminar" x:Name="btneliminar" Margin="10,0,10,0" Clicked="btneliminar_Clicked" IsEnabled="False"/>
+        <Button Text="Actualizar" x:Name="btnactualizar" Margin="10,0,10,0" Clicked="btnactualizar_Clicked" IsEnabled="False"/>
+    </StackLayout>
+
+</ContentPage>
